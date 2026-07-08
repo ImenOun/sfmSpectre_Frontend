@@ -1,0 +1,72 @@
+<div class="page-container animate-fade-in">
+  <div class="page-header">
+    <div>
+      <h1 class="page-title">Factures & Redevances</h1>
+      <p class="page-subtitle">Suivi des paiements pour l'exploitation du spectre</p>
+    </div>
+    <div class="header-actions-group">
+      <button class="btn btn-secondary mr-3" style="margin-right: 12px;">Exporter (Excel)</button>
+      <button class="btn btn-primary">Créer une Facture</button>
+    </div>
+  </div>
+
+  <div class="summary-cards">
+    <div class="summary-card">
+      <div class="title">Total Encaissé (Mois)</div>
+      <div class="amount">245 500 €</div>
+    </div>
+    <div class="summary-card alert">
+      <div class="title">En Attente de Paiement</div>
+      <div class="amount">18 200 €</div>
+    </div>
+    <div class="summary-card danger">
+      <div class="title">Retards (> 30 Jours)</div>
+      <div class="amount">4 500 €</div>
+    </div>
+  </div>
+
+  <div class="table-container premium-card mt-4 p-0">
+    <table class="invoices-table">
+      <thead>
+        <tr>
+          <th>N° Facture</th>
+          <th>Opérateur</th>
+          <th>Montant</th>
+          <th>Date de facturation</th>
+          <th>Échéance</th>
+          <th>Statut</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="font-mono">FAC-2026-089</span></td>
+          <td class="font-semibold">Telecom Network</td>
+          <td>12 500,00 €</td>
+          <td>01 Juil 2026</td>
+          <td>31 Juil 2026</td>
+          <td><span class="status warning">En attente</span></td>
+          <td><button class="link-btn">Voir</button></td>
+        </tr>
+        <tr>
+          <td><span class="font-mono">FAC-2026-088</span></td>
+          <td class="font-semibold">Radio Plus Nationale</td>
+          <td>3 200,50 €</td>
+          <td>28 Juin 2026</td>
+          <td>28 Juil 2026</td>
+          <td><span class="status success">Payée</span></td>
+          <td><button class="link-btn">Voir</button></td>
+        </tr>
+        <tr>
+          <td><span class="font-mono">FAC-2026-071</span></td>
+          <td class="font-semibold">Airways Logistics</td>
+          <td>4 500,00 €</td>
+          <td>15 Mai 2026</td>
+          <td>15 Juin 2026</td>
+          <td><span class="status danger">En retard</span></td>
+          <td><button class="link-btn">Relancer</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

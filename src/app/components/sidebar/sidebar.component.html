@@ -1,0 +1,32 @@
+<aside class="sidebar-container">
+  <div class="logo-section">
+    <div class="logo-icon glass-panel">
+      <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    </div>
+    <span class="logo-text">SFM<span class="text-primary-light">Spectre</span></span>
+  </div>
+
+  <nav class="nav-menu">
+    <a *ngFor="let item of navItems" 
+       [routerLink]="item.route" 
+       routerLinkActive="active" 
+       class="nav-item">
+      <svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" [attr.d]="item.icon"></path>
+      </svg>
+      <span class="nav-label">{{ item.label }}</span>
+    </a>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="user-profile">
+      <div class="avatar bg-primary-light">AD</div>
+      <div class="user-info">
+        <div class="user-name">Admin</div>
+        <div class="user-role">Super Administrateur</div>
+      </div>
+    </div>
+  </div>
+</aside>

@@ -1,0 +1,56 @@
+<div class="login-container">
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="login-bento-box">
+    <div class="login-header">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <h1>sfmSpectre</h1>
+      </div>
+      <p class="subtitle">Secure entry to Spectrum Platform</p>
+    </div>
+
+    <form class="login-form" (submit)="onLogin($event)">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <div class="input-wrapper">
+          <span class="input-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </span>
+          <input type="text" id="username" name="username" [(ngModel)]="username" placeholder="admin" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="label-group">
+          <label for="password">Password</label>
+          <a href="#" class="forgot-link">Recover Access</a>
+        </div>
+        <div class="input-wrapper">
+          <span class="input-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </span>
+          <input type="password" id="password" name="password" [(ngModel)]="password" placeholder="••••••••" required>
+        </div>
+      </div>
+
+      <button type="submit" class="primary-button neon-hover">
+        <span>Initialize Session</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+    </form>
+
+    <div class="login-footer">
+      <div class="system-status">
+        <div class="status-dot"></div>
+        <span>Core servers online</span>
+      </div>
+    </div>
+  </div>
+</div>

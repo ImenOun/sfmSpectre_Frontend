@@ -1,0 +1,74 @@
+<div class="page-container animate-fade-in">
+  <div class="page-header">
+    <div>
+      <h1 class="page-title">Gestion des Autorisations</h1>
+      <p class="page-subtitle">Nouvelles demandes et suivi des licences d'exploitation</p>
+    </div>
+    <button class="btn btn-primary">
+      <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 20px; height: 20px; margin-right: 8px;">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      </svg>
+      Saisir une demande
+    </button>
+  </div>
+
+  <div class="kanban-board">
+    <!-- Column 1 -->
+    <div class="kanban-col">
+      <div class="kanban-header">
+        <span class="badge bg-yellow">Nouvelles Demandes</span>
+        <span class="count">2</span>
+      </div>
+      <div class="kanban-cards">
+        <div class="kanban-card premium-card">
+          <div class="card-tag">Liaison FH</div>
+          <h4>Projet Extension Sud</h4>
+          <p class="text-sm">Telecom Network - Demande de 2 canaux en 15 GHz.</p>
+          <div class="card-footer">
+            <span class="date">Aujourd'hui</span>
+            <div class="avatars">TN</div>
+          </div>
+        </div>
+        <div class="kanban-card premium-card">
+          <div class="card-tag">PMR</div>
+          <h4>Réseau Sécurité</h4>
+          <p class="text-sm">Société Gardiennage Plus - 2 fréquences VHF.</p>
+          <div class="card-footer">
+            <span class="date">Il y a 2 jours</span>
+            <div class="avatars">SG</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="kanban-col">
+      <div class="kanban-header">
+        <span class="badge bg-blue">En Cours d'Étude</span>
+        <span class="count">1</span>
+      </div>
+      <div class="kanban-cards">
+        <div class="kanban-card premium-card">
+          <div class="card-tag">5G NR</div>
+          <h4>Déploiement Zone Nord</h4>
+          <p class="text-sm">Examen technique d'interférence en cours.</p>
+          <div class="card-footer">
+            <span class="date">En cours</span>
+            <div class="avatars">Tech</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="kanban-col">
+      <div class="kanban-header">
+        <span class="badge bg-green">Validées (En attente paiement)</span>
+        <span class="count">0</span>
+      </div>
+      <div class="kanban-cards empty-state">
+        Aucune demande dans cette colonne
+      </div>
+    </div>
+  </div>
+</div>

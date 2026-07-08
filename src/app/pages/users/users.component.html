@@ -1,0 +1,79 @@
+<div class="page-container animate-fade-in">
+  <div class="page-header">
+    <div>
+      <h1 class="page-title">Utilisateurs du Spectre</h1>
+      <p class="page-subtitle">Gestion et visualisation des opérateurs et entités</p>
+    </div>
+    <button class="btn btn-primary">
+      <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+      </svg>
+      Nouvel Utilisateur
+    </button>
+  </div>
+
+  <div class="table-container premium-card p-0">
+    <div class="table-actions">
+      <input type="text" placeholder="Rechercher..." class="table-search">
+      <select class="table-filter">
+        <option>Tous les types</option>
+        <option>Opérateur Mobile</option>
+        <option>Radio/TV</option>
+        <option>Service Public</option>
+      </select>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Nom de l'entité</th>
+          <th>Type</th>
+          <th>Directeur / Contact</th>
+          <th>Bande Principale</th>
+          <th>Statut</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="entity-name">Telecom Network</div>
+            <div class="entity-id">ID: USR-2026-001</div>
+          </td>
+          <td>Opérateur Mobile</td>
+          <td>Ahmed Benali</td>
+          <td>3.5 GHz (5G)</td>
+          <td><span class="status status-active">Actif</span></td>
+          <td>
+            <button class="btn-secondary ghost-btn">Détails</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="entity-name">Radio Plus Nationale</div>
+            <div class="entity-id">ID: USR-2026-045</div>
+          </td>
+          <td>Radio/TV</td>
+          <td>Sarah Mansour</td>
+          <td>88 - 108 MHz</td>
+          <td><span class="status status-active">Actif</span></td>
+          <td>
+            <button class="btn-secondary ghost-btn">Détails</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="entity-name">Aviation Civile</div>
+            <div class="entity-id">ID: USR-2026-112</div>
+          </td>
+          <td>Service Public</td>
+          <td>Direction Générale</td>
+          <td>118 - 137 MHz</td>
+          <td><span class="status status-review">En revue</span></td>
+          <td>
+            <button class="btn-secondary ghost-btn">Détails</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

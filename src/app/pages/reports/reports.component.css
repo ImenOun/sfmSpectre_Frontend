@@ -1,0 +1,120 @@
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.report-card {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  background: var(--surface-color);
+  border: 1px solid rgba(255,255,255, 0.8);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-bento);
+}
+
+.report-card:hover {
+  border-color: rgba(6, 182, 212, 0.3);
+  box-shadow: 0 10px 25px rgba(6, 182, 212, 0.08), var(--shadow-bento);
+  transform: translateY(-2px);
+}
+
+.report-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid transparent;
+}
+
+.report-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.bg-indigo-100 { background: #E0E7FF; color: var(--primary-color); border-color: #C7D2FE; }
+.bg-blue-100 { background: #E0F2FE; color: var(--secondary-color); border-color: #BAE6FD; }
+
+.report-details {
+  flex-grow: 1;
+}
+
+.report-details h4 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.report-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.8rem;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.status.published {
+  background: #D1FAE5;
+  color: #059669;
+  border-color: #A7F3D0;
+}
+
+.status.draft {
+  background: #F1F5F9;
+  color: #475569;
+  border-color: #E2E8F0;
+}
+
+.date {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.report-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-icon {
+  background: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.06);
+  cursor: pointer;
+  color: var(--text-secondary);
+  padding: 10px;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.btn-icon:hover {
+  background: #F8FAFC;
+  color: var(--primary-color);
+  border-color: #CBD5E1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.btn-icon svg {
+  width: 20px;
+  height: 20px;
+}

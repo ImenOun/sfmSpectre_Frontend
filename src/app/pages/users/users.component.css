@@ -1,0 +1,92 @@
+.p-0 { padding: 0 !important; }
+
+.table-actions {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  gap: 1rem;
+  background: #F8FAFC;
+}
+
+.table-search, .table-filter {
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #FFFFFF;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.table-search {
+  width: 350px;
+}
+
+.table-search:focus, .table-filter:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.table-filter {
+  cursor: pointer;
+}
+
+.table-filter option {
+  background: var(--surface-color);
+  color: var(--text-primary);
+}
+
+.entity-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.entity-id {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-family: 'Space Mono', monospace;
+  background: #F1F5F9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.status-active {
+  background: #D1FAE5;
+  color: #059669;
+}
+
+.status-review {
+  background: #F1F5F9;
+  color: #475569;
+}
+
+.ghost-btn {
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.1);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.ghost-btn:hover {
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+}
